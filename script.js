@@ -51,8 +51,6 @@ const books = [
   }];
 
 // * FASE 1:
-
-
 const biblio = document.querySelector('.biblio'); 
 // * Imprimir info de cada objeto.
 for (i = 0; i < books.length; i++) {
@@ -79,16 +77,15 @@ for (i = 0; i < books.length; i++) {
   // card.appendChild(biblio);
 }
 
-let tittlePage = document.createElement('h1');
-// let h1text = 'Biblioteca Molona';
-document.getElementsByTagName('header').appendChild(titlePage);;
-titlePage.innerHTML='Biblioteca Molona';
+
+const h1Tag = document.createElement('h1');
+const header = document.querySelector('header');
+h1Tag.textContent = 'Biblioteca Molona';
+header.appendChild(h1Tag);
 
 
 
-
-
-
-
-  
-
+// * Este h2 no consigo introducirlo en el documento.
+let h2Text = 'Los mejores libros clásicos de la red';
+const subtitulo = `<h2> ${h2Text} </h2>`;
+header.appendChild(subtitulo);
