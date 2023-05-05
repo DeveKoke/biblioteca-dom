@@ -88,4 +88,4 @@ header.appendChild(h1Tag);
 // * Este h2 no consigo introducirlo en el documento.
 let h2Text = 'Los mejores libros clásicos de la red';
 const subtitulo = `<h2> ${h2Text} </h2>`;
-header.appendChild(subtitulo);
+header.innerHTML +=subtitulo;
