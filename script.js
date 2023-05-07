@@ -62,11 +62,11 @@ for (i = 0; i < books.length; i++) {
   let textCountry = document.createTextNode(`País : ${books[i].country}\n`);
   let textLanguage = document.createTextNode(`Idioma : ${books[i].language}\n`);
   let textPages = document.createTextNode(`Páginas : ${books[i].pages}\n`);
-  let textTitle = document.createTextNode(`Titulo : ${books[i].title}\n`);
+  let textTitle = document.createTextNode(`${books[i].title}\n`);
   let textYear = document.createTextNode(`Año : ${books[i].year}\n`);
 
-  para.appendChild(imagen);
   para.appendChild(textTitle);
+  para.appendChild(imagen);
   para.appendChild(textAuthor);
   para.appendChild(textYear);
   para.appendChild(textCountry);
@@ -85,7 +85,10 @@ header.appendChild(h1Tag);
 
 
 
-// * Este h2 no consigo introducirlo en el documento.
+
 let h2Text = 'Los mejores libros clásicos de la red';
 const subtitulo = `<h2> ${h2Text} </h2>`;
-header.innerHTML +=subtitulo;
+header.innerHTML += subtitulo;
+
+
+
